@@ -16,10 +16,6 @@
 
 ### 目录
 - [完整App](#完整App)
-- [框架](#框架)
-  - [React](#react)
-  - [Framework](#framework)
-  - [混合开发](#混合开发)
 - [UI](#UI)
   - [综合UI](#综合UI)
   - [列表](#列表)
@@ -31,7 +27,7 @@
   - [日历三方库](#日历三方库)
   - [图表](#图表)
   - [颜色](#颜色)
-  - [scrollView](#scrollView)
+  - [ScrollView](#ScrollView)
   - [对话交互](#对话交互)
     - [隐藏与显示](#隐藏与显示)
     - [HUD与Toast](#HUD与Toast)
@@ -52,7 +48,7 @@
   - [Tabbar](#Tabbar)
   - [进度](#进度)
   - [小红点](#小红点)
-  - [page](#page)
+  - [Page](#page)
   - [轮播](#轮播)
   - [选择器](#选择器)
   - [购物车](#购物车)
@@ -163,10 +159,6 @@
 - [设计模式](#设计模式)
 - [版本管理](#版本管理)
   - [Git用法](#Git用法)
-  - [GitHub](#GitHub)
-  - [GitBook](#GitBook)
-  - [Git文章](#Git文章)
-  - [GithubRank](#GithubRank)
   - [桌面工具](#桌面工具)
   - [Github客户端](#Github客户端)
   - [Github插件](#Github插件)
@@ -181,6 +173,10 @@
 - [mac](#mac)
 - [开发环境](#开发环境)
 - [深度学习](#深度学习)
+- [框架](#框架)
+  - [React](#react)
+  - [Framework](#framework)
+  - [混合开发](#混合开发)
 - [前端](#前端)
 - [后台](#后台)
 - [AppHTTPServer](#AppHTTPServer)
@@ -190,18 +186,15 @@
 #### 完整App
 
 * [GitHubRank](http://githubrank.com/) - GitHub活跃用户排名(便于学习，请勿攀比).
-* [expo](https://github.com/expo/expo) - Expo iOS/Android Client https://docs.expo.io/.
 * [PPRows for Mac](https://github.com/jkpang/PPRows) - 在Mac上优雅的计算你写了多少行代码.
-* [NewsBlur](https://github.com/samuelclay/NewsBlur) - 作者独自一个人 Samuel Clay 做出来的一款名为 NewsBlur 的新闻阅读器, 很多人都称其为 Google Reader 的替代品, 这是它的源码.
+* [NewsBlur](https://github.com/samuelclay/NewsBlur) - NewsBlur 的新闻阅读器, 很多人都称其为 Google Reader 的替代品
 * [HackerNews-React-Native](https://github.com/iSimar/HackerNews-React-Native) - 用React Native 完成的 HackerNews 客户端.
-* [WeChat](https://github.com/zhengwenming/WeChat)- 实现类似微信朋友圈或者QQ空间，评论回复，九宫格布局。处理键盘弹出后定位到当前点击的被评论人处。另：滑动时候FPS在57-60之间，纵享丝滑.
-* [MessageDisplayKit](https://github.com/xhzengAIB/MessageDisplayKit) - An IM App like WeChat App has to send text, pictures, audio, video, location messaging, managing local address book, share a circle of friends, drifting friends, shake a fun and more interesting features.
+* [WeChat](https://github.com/zhengwenming/WeChat)- 实现类似微信朋友圈或者QQ空间，评论回复，九宫格布局。
 * [iOSAppTemplate](https://github.com/tbl00c/iOSAppTemplate) - 高仿微信，iOS应用开发模板，个人总结.
 * [Bilibili_Wuxianda](https://github.com/MichaelHuyp/Bilibili_Wuxianda) - 赞 高仿Bilibili客户端.
 * [Coding-iOS](https://github.com/Coding/Coding-iOS) - Coding iOS 客户端源代码.
 * [Coding-iPad](https://github.com/Coding/Coding-iPad) - Coding iPad 客户端源代码.
 * [Monkey](https://github.com/coderyi/Monkey) - GitHub第三方iOS客户端.
-* [firefox-ios](https://github.com/mozilla/firefox-ios) Firefox for iOS.
 * [RSSRead](https://github.com/ming1016/RSSRead) - “已阅”（iOS上开源RSS新闻阅读器）.
 * [zulip-ios](https://github.com/zulip/zulip-ios) - Dropbox收购公司内部社交服务商Zulip,然后全部开源，这是iOS App.
 * [ChatSecure-iOS](https://github.com/ChatSecure/ChatSecure-iOS) - Objective-C写的XMPP聊天应用.
@@ -213,14 +206,12 @@
 * [Sol](https://github.com/comyarzaheri/Sol) - 漂亮的扁平风格的天气App.
 * [v2ex](https://github.com/singro/v2ex) - v2ex第三方iOS客户端。V2EX是一个知名技术创意网站，由设计师、程序员及有创意的人参与的社区.
 * [WNXHuntForCity](https://github.com/ZhongTaoTian/WNXHuntForCity) - 城觅By-Objective-C.
-* [breadwallet](https://github.com/voisine/breadwallet) - breadwallet - bitcoin wallet.
 * [GreatReader](https://github.com/semweb/GreatReader) - GreatReader PDF阅读客户端.
 * [Tropos](https://github.com/thoughtbot/Tropos) - 天气客户端.
 * [WordPress-iOS](https://github.com/wordpress-mobile/WordPress-iOS) - WordPress iOS官方客户端. 笔者强烈推荐的开源项目.
 * [TeamTalk](https://github.com/mogujie/TeamTalk)  - 蘑菇街TeamTalk. 开源IM. 笔者强烈推荐.
 * [MessageDisplayKit](https://github.com/xhzengAIB/MessageDisplayKit) - 一个类似微信App的IM应用，拥有发送文字、图片、语音、视频、地理位置消息，管理本地通信录、分享朋友 圈、漂流交友、摇一摇和更多有趣的功能。
 * [iOS-Oncenote](https://github.com/chenyufeng1991/iOS-Oncenote)  - 这是一款类似于印象笔记Evernote的生活类iOS应用——朝夕笔记 Oncenote。我希望能为更多的iOS开发者提供帮助与服务.
-* [GSD_WeiXin](https://github.com/gsdios/GSD_WeiXin) 高仿微信.
 * [v2ex](https://github.com/singro/v2ex) - v2ex 的客户端，新闻、论坛.
 * [wikipedia-ios](https://github.com/wikimedia/wikipedia-ios) - wikipedia-ios 客户端.
 * [DeckRocket](https://github.com/jpsim/DeckRocket) - 在相同 WiFi 网络环境内，通过iPhone 控制并播放 Mac 中的 PDF 文档.
@@ -236,16 +227,15 @@
 * [JFMeiTuan](https://github.com/tubie/JFMeiTuan) - 造美团应用界面构建的 iOS 应用, 第二个是 tubiebutu 的 JFMeiTuan.
 * [SXNews](https://github.com/dsxNiubility/SXNews) - 模仿网易新闻做的新闻软件，完成了主导航页，新闻详情页，图片浏览页，评论页.
 * [Monkey](https://github.com/coderyi/Monkey) - GitHub开发者和仓库排名的开源App.
-* [Uther](https://github.com/callmewhy/Uther) -  跟蠢萌的外星人聊天，还能帮你记事”.[itunes下载](https://itunes.apple.com/cn/app/uther/id1024104920).
+* [Uther](https://github.com/callmewhy/Uther) -  跟蠢萌的外星人聊天，还能帮你记事
 * [高仿斗鱼TV](http://code.cocoachina.com/view/128246) - 高仿斗鱼TV，点击头部滚动视图可以播放视频.
 * [Coding-iPad](https://github.com/Coding/Coding-iPad) - Coding的官方 iPad 客户端.
 * [wire-ios](https://github.com/wireapp/wire-ios) - 私密消息应用wire源码.
-* [react-native-gitfeed](https://github.com/xiekw2010/react-native-gitfeed) - 目前最实用简洁的github客户端了.
 * [phphub-ios](https://github.com/Aufree/phphub-ios) - PHPHub的iOS客户端，同时兼容iPhone和iPad.
 * [LeagueofLegends](https://github.com/HarrisHan/LeagueofLegends) - 一个关于英雄联盟的完整iOS开源项目，接口均来自多玩，腾讯各大游戏平台.
 * [BTApp](https://github.com/Ryan0520/BTApp) - BTApp 仿半糖 iOS App 的 Demo 应用.
 * [iOS完整App资源收集](https://github.com/CoderJackyHuang/MDArtileFiles) - 很多开源的完整的App--标哥的技术博客.
-* [XCFApp-1](https://github.com/callmejoejoe/XCFApp) - 高仿下厨房App，Objective-C，Xcode7.2，数据通过Charles抓的，有接口也有本地数据。说明：关于代码被清空，会用git的你肯定明白，[教程](http://www.jianshu.com/p/a8f619a2c622/).
+* [XCFApp-1](https://github.com/callmejoejoe/XCFApp) - 高仿下厨房App，Objective-C，Xcode7.2，数据通过Charles抓的，有接口也有本地数据。
 * [YoCelsius](https://github.com/YouXianMing/YoCelsius) - 已经上线的一款天气预报的应用,几乎所有的交互动画效果，想学习动画的开发人员可以作为参考.
 * [DayDayNews](https://github.com/gaoyuhang/DayDayNews) - 仿网易新闻客户端，实现新闻浏览，视频播放，仿搜狐视频、百思不得姐等当前主流视频播放器，实现流媒体播放，自动监听屏幕转动，实现横屏播放 , 抓取百度图片，瀑布流显示，夜间模式，环信即时通讯.
 * [ECMobile_iOS](https://github.com/GeekZooStudio/ECMobile_iOS) - 基于ECShop的手机商城客户端（iOS、Android、Php一体）.
@@ -258,54 +248,6 @@
 * [OneM](https://github.com/guangqiang-liu/OneM) - OneM是一款纯ReactNative打造的集杂志浏览、音乐播放、视频播放于一体的综合性App,并且支持iOS和Android双平台.
 * [ZMBCY-iOS](https://github.com/Brances/ZMBCY-iOS) - 高仿二次元网易GACHA,所有接口均通过Charles抓取而来，里面有可单独抽离出来的卡片轮播.
 * [Hotels](https://github.com/FantasticLBP/Hotels) - 酒店预订App.
-
-#### 框架                                               
-
-* [nimbus](https://github.com/jverkoey/nimbus)  - Nimbus是一个开源的iOS框架，比起Three20，Nimbus的文档更为全面、丰富，能够实现很多非常炫的界面特效.
-* [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) - ReactiveCocoa受函数响应式编程激发。不同于使用可变的变量替换和就地修改，RAC提供Signals来捕获当前值和将来值（ [使用介绍](http://yulingtianxia.com/blog/2014/07/29/reactivecocoa/) ），[不错的例子](http://iiiyu.com/2014/12/26/learning-ios-notes-thirty-six/),入门好教程：[ReactiveCocoa入门教程：第一部分 ](http://www.cocoachina.com/ios/20150123/10994.html)。[Reactive Cocoa 3.0 在 MVVM 中的应用](http://ios.jobbole.com/82232/) ,[小码哥：快速让你上手ReactiveCocoa之基础篇](http://www.jianshu.com/p/87ef6720a096)。
-* [react-native-maps](https://github.com/airbnb/react-native-maps) - React Native Mapview component for iOS + Android.
-* [react-native-svg](https://github.com/react-native-community/react-native-svg)  - SVG library for React Native. react-native-svg is built to provide a SVG interface to react native on both iOS and Android.
-* [react-native-maps](https://github.com/react-community/react-native-maps) - React Native Mapview component for iOS + Android.
-* [react-native-code-push](https://github.com/Microsoft/react-native-code-push) - React Native module for CodePush.
-* [CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController) - 低耦合集成TabBarController,最低只需传两个数组即可完成主流App框架搭建.
-* [samurai-native](https://github.com/hackers-painters/samurai-native) - 是一个基于浏览器内核通过HTML+CSS 开发原生移动应用的iOS框架.
-* [HHRouter](https://github.com/Huohua/HHRouter) - 一言以蔽之，URL Router 即将 UIViewController 映射成 URL，从而支持通过 URL 进行界面跳转。是的，就和 Web 一样。当然，这并不是 Web Developer 转职为 iOS Developer 后所做的无聊玩具。URL Router 有着许多切实的好处.
-* [AsyncDisplayKit](https://github.com/facebook/AsyncDisplayKit) - 异步界面渲染库,为极限优化View效果而生（同时提供 UIView bridge 接口）.
-* [XFLegoVIPER](https://github.com/yizzuide/XFLegoVIPER)  - A lightweight framework base on VIPER architecture for iOS, to build robust and maintained large scale project.
-* [publishImageAndVideoAnsRecord](https://github.com/DayCrazy/publishImageAndVideoAnsRecord) - 发布视频、语言、照片模块集合，其中包括带placeHolder的TextView、录制小视频、录制音频、选择照片或拍照.
-* [XBSettingController](https://github.com/changjianfeishui/XBSettingController) - 快速搭建类个人中心及应用设置界面.
-* [EVNEstorePlatform](https://github.com/zonghongyan/EVNEstorePlatform)  - App项目框架 [简书解析](http://www.jianshu.com/p/89e25c288d76?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
-* [QMUI_iOS](https://github.com/QMUI/QMUI_iOS) - QMUI iOS——致力于提高项目 UI 开发效率的解决方案.
-* [UniversalProject](https://github.com/XuYang8026/UniversalProject) - 基于MVC架构的iOS轻量级框架，封装了基类、基于猿题库YTKNetwork的网络服务、工具库，NavigationController转场动画/瀑布流/粒子动画/小demo，已适配iOS11 & iPhone X.
-* [coderZsq.project.oc](https://github.com/coderZsq/coderZsq.project.oc) - A lightweight and efficient application development tool set for iOS, and accelerating the developing speed.
-* [AppManager](https://github.com/nanchen2251/AppManager) - 🔥 An elegant exit application and restart mechanism management.
-* [MACProject](https://github.com/azheng51714/MACProject) - 这是一个用 Objective-C 写的 iOS 轻量级框架，旨在快速构建 iOS App.
-* [iOSProject](https://github.com/NJHu/iOSProject) - 一些oc项目集合.
-
-#### React
-
-* [react-native](https://github.com/facebook/react-native)  - A framework for building native apps with React.
-* [weex](https://github.com/alibaba/weex) - A framework for building Mobile cross-platform UI.
-* [LoginWithReactiveCocoa](https://github.com/CrazySurfBoy/LoginWithReactiveCocoa) - ReactiveCocoa - 登录交互效果的实现。
-* [BeeFramework](https://github.com/gavinkwoe/BeeFramework) -  与ReactiveCocoa类似，[BeeFramework用户指南 v1.0](http://www.lanrenios.com/tutorials/all/2012/1220/641.html)。
-* [Objective-Chain](https://github.com/Tricertops/Objective-Chain) - Objective-Chain是一个面向对象的响应式框架，作者表示该框架吸收了 ReactiveCocoa 的思想，并且想做得更面向对象一些。
-* [MVVMFramework](https://github.com/lovemo/MVVMFramework) - (OC版)总结整理下一个快速开发框架，分离控制器中创建tableView和collectionView的代码，已加入cell自适应高度，降低代码耦合，提高开发效率。
-* [react-native-config](https://github.com/luggit/react-native-config) - Bring some 12 factor love to your mobile apps.
-* [react-native-syan-image-picker](https://github.com/syanbo/react-native-syan-image-picker) - React-Native 多图片选择 支持裁剪 压缩.
-* [ReactNative的理解与思考,三端同一套代码的实践](http://www.jianshu.com/p/1144469bf81f?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io).
-* [RNStudyNotes](https://github.com/crazycodeboy/RNStudyNotes) - React Native 研究与实践.
-
-#### framework
-
-* [ReSwift](https://github.com/ReSwift/ReSwift) - ReSwift 是一个轻量级的框架，能够帮助你很轻松的去构建一个 Redux 架构的app.
-* [Small](https://github.com/wequick/Small) - A small framework to split app into small parts.
-* [Lotusoot](https://github.com/Vegetarians/Lotusoot) - 灵活的 Swift 组件通信和路由工具.
-* [Aspects](https://github.com/steipete/Aspects) - 个简洁高效的用于使iOS支持AOP面向切面编程的库.它可以帮助你在不改变一个类或类实例的代码的前提下,有效更改类的行为.
-* [Form](https://github.com/hyperoslo/Form) - JSON 驱动的 Form表单系统，复杂的表单填写类 App 极其需要（比如淘宝呢！）.
-
-#### 混合开发
-
-* [rexxar-ios](https://github.com/douban/rexxar-ios) - 豆瓣推的混合开发库 Mobile Hybrid Framework Rexxar iOS Container.
 
 #### UI
 
@@ -335,8 +277,6 @@
 * [SWTableViewCell](https://github.com/onevcat/SWTableViewCell) - 国内开源作者，带很多手势的表单元格.
 * [MGSwipeTableCell](https://github.com/MortimerGoro/MGSwipeTableCell) - 另一个常见于很多应用中的UI组件，苹果应该考虑在标准的iOS SDK中加入一些类似的内容。Swipeable表格cell是这个pod的最佳描述，也是最好的。非常👍👍👍 .
 * [MCSwipeTableViewCell](https://github.com/alikaragoz/MCSwipeTableViewCell) - 带很多手势的表单元格.
-* [TMQuiltView](https://github.com/1000Memories/TMQuiltView) - 瀑布流.
-* [XRWaterfallLayout](https://github.com/codingZero/XRWaterfallLayout) - 超简单的瀑布流实现,[实现说明](http://www.cocoachina.com/ios/20160407/15872.html).
 * [WaterfallFlowDemo](https://github.com/lengmolehongyan/WaterfallFlowDemo) - 一个简单的UICollectionView瀑布流布局演示demo.
 * [XLForm](https://github.com/xmartlabs/XLForm) - 很多表格类的table,写法更高冷一点，推荐使用.
 * [AMWaveTransition](https://github.com/andreamazz/AMWaveTransition) - 很炫的带有表格的视图控制器切换效果，点击每个栏目会有限带有波浪效果的信息展示，类似于Facebook Paper.
@@ -352,7 +292,6 @@
 * [BATabBarController](https://github.com/antiguab/BATabBarController) - A TabBarController with a unique animation for selection. [GUITabPagerViewController](https://github.com/guilhermearaujo/GUITabPagerViewController) - 多个tab滑动切换.
 * [VOMetroLayoutDemo](https://github.com/pozi119/VOMetroLayoutDemo) - Metro风格的UICollectionView, 目前只支持横向布局,仅在iPad上应用.
 * [KYCellAnimation](https://github.com/KittenYang/KYCellAnimation) - 给UITableViewCell增加进入的动画.
-* [CYLTableViewPlaceHolder](https://github.com/ChenYilong/CYLTableViewPlaceHolder) - 一行代码完成“空TableView占位视图”管理.
 * [横向展示文本内容的自定义cell](http://d.cocoachina.com/code/detail/298409) - 可以横向展示文本内容的自定义cell，根据文本无限滚动.
 * [ExpandingStackCells](https://github.com/jozsef-vesza/ExpandingStackCells) - 采用 UIStackView 实现表格单元格扩展内容显示示例及解决方案.
 * [FDStackView](https://github.com/forkingdog/FDStackView) - 可以将 UIStackView 的最低支持版本拉低到 iOS6，无需配置，没有代码侵染，扔到工程里后直接用系统 UIStackView 的 API 即可，同时兼容 Storyboard.
@@ -360,13 +299,10 @@
 * [JZNavigationExtension](https://github.com/JazysYu/JZNavigationExtension) - 多功能导航控制器，可以透明返回栏.
 * [QuickRearrangeTableView](https://github.com/okla/QuickRearrangeTableView) - 基于 UITableView 的快速重排功能扩展子类。通过长按选定单元格然后滚动移动到指定位置.
 * [LLNoDataView](https://github.com/LvJianfeng/LLNoDataView) - 超简单的空数据提示通用View支持UIScrollView、UITableView、UICollectionView、UIWebView.
-* [XLPlainFlowLayout](https://github.com/HebeTienCoder/XLPlainFlowLayout) - 可以让UICollectionView的header也支持悬停效果，类似于tableView的Plain风格.
 * [WMPageController](https://github.com/wangmchn/WMPageController) - 一个方便的 pageContrller 的控件，里面还包括滚动视图。
-* [PSTCollectionView](https://github.com/steipete/PSTCollectionView) - PSTCollectionView.
 * [MTMaterialDelete](https://github.com/MartinRGB/MTMaterialDelete) - 非常有趣的Material Design动画，动画删除表里面的单元格.
 * [BusyNavigationBar](https://github.com/gmertk/BusyNavigationBar) - 进度条式NavigationBar导航条.
 * [LGSettingView](https://github.com/LiGoEX/LGSettingView) - LGSettingView仅需三句代码即可快速集成设置界面，免去每次开发新应用都要重新布置设置界面的烦恼.
-* [微博cell自动布局](http://code.cocoachina.com/view/129212) - 使用autoLayout对微博的cell进行自动布局，自适应cell的高度.
 * [TreeTableView](https://github.com/TyroneWing/TreeTableView) - ZYTreeTableView：TreeView 模仿好友列表的实现方式.
 * [ZWSlideViewController](https://github.com/squarezw/ZWSlideViewController) - ZWSlideViewController多页滑动视图控制器（类似新闻类门户APP）,可以用最简单的继承方法使用，也可以不用继承，只用菜单或主视图页面，可实现丰富的定制，可以使用在多种不同形态的APP下，还可以将其做为多页或多图的滑动介绍.
 * [XWCatergoryView](https://github.com/wazrx/XWCatergoryView) - 一个轻量级的顶部分类视图控件，只需要通过简单的设置，你就可以快速集成该控件， 控件目前暂时有底部横条移动，椭圆背景移动，文字缩放，文字颜色变化，和文字颜色渐变五种效果，五种效果可以叠加使用也可以单一使用。[实现教程](http://www.jianshu.com/p/274d19f97564)
@@ -378,16 +314,17 @@
 * [YZHeaderScaleImage](https://github.com/iThinkerYZ/YZHeaderScaleImage) - 一行代码快速集成tableView中头部缩放视图.
 * [ExpandTableView](https://github.com/zhengwenming/ExpandTableView) - 可折叠展开的tableView，QQ好友分组列表.
 * [SwipeTableView](https://github.com/Roylee-ML/SwipeTableView) - Both scroll horizontal and vertical for segment scrollview which have a same header. — 类似半糖、美丽说主页与QQ音乐歌曲列表布局效果，实现不同菜单的左右滑动切换，同时支持类似tableview的顶部工具栏悬停（既可以左右滑动，又可以上下滑动）。兼容下拉刷新，自定义 collectionview实现自适应 contentSize 还可实现瀑布流功能.
-* [TableViewAnimationKit](https://github.com/alanwangmodify/TableViewAnimationKit) - TableView Animation ，move your tableView.
 * [HVScrollView](https://github.com/SPStore/HVScrollView) - 这不是框架，只是3个示例程序，给大家提供一个实现这种布局的思路.
-* [iOS开发的一些奇巧淫技1](http://www.jianshu.com/p/50b63a221f09) - TableView不显示没内容的Cell怎么办.
 * [EHHorizontalSelectionView](https://github.com/josshad/EHHorizontalSelectionView) - Horizontal table view style controller.
 * [YHListKit](https://github.com/ShannonChenCHN/YHListKit) - 一个轻量级的数据驱动列表框架.
+* [iOS开发的一些奇巧淫技1](http://www.jianshu.com/p/50b63a221f09) - TableView不显示没内容的Cell怎么办.
 * [LYEmptyView](https://github.com/yangli-dev/LYEmptyView) - iOS一行代码集成空白页面占位图（无数据、无网络占位图).
+* [CYLTableViewPlaceHolder](https://github.com/ChenYilong/CYLTableViewPlaceHolder) - 一行代码完成“空TableView占位视图”管理.
 
 #### TableView适配
 
 * [UITableView-FDTemplateLayoutCell](https://github.com/forkingdog/UITableView-FDTemplateLayoutCell) - UITableView-FDTemplateLayoutCell 是一个方便缓存 UITableViewCell 的高度的框架.
+* [微博cell自动布局](http://code.cocoachina.com/view/129212) - 使用autoLayout对微博的cell进行自动布局，自适应cell的高度.
 
 #### CollectionView
 
@@ -396,12 +333,16 @@
 * [RACollectionViewReorderableTripletLayout](https://github.com/ra1028/RACollectionViewReorderableTripletLayout) - 自定义的CollectionView布局，可以通过拖动进行cell的重新排序.
 * [IGListKit](https://github.com/Instagram/IGListKit) - IGListKit是Instagram推出的新的UICollectionView框架，使用数据驱动，旨在创造一个更快更灵活的列表控件.
 * [CollectionViewClassifyMenu](https://github.com/ChenYilong/CollectionViewClassifyMenu) - CollectionView做的两级菜单，可以折叠第二级菜单.
+* [PSTCollectionView](https://github.com/steipete/PSTCollectionView) - PSTCollectionView.
 * [TableFlip](https://github.com/mergesort/TableFlip) - A simpler way to do cool UITableView animations.
 * [DraggingSort](https://github.com/HelloYeah/DraggingSort) - 长按拖拽排序.
 * [AppStore-Horizontal-Demo](https://github.com/liao3841054/AppStore-Horizontal-Demo) - 仿半糖App 个人中心可以横向滚动的 列表 UICollectionView UITableView UISrcrollView.
 * [CollectionKit](https://github.com/SoySauceLab/CollectionKit) - A modern Swift framework for building reusable data-driven collection components.
 * [CSStickyHeaderFlowLayout](https://github.com/jamztang/CSStickyHeaderFlowLayout) - CollectionView实现悬停的header.
 * [uicollectionview-reordering](https://github.com/nshintio/uicollectionview-reordering) - UICollectionViews的拖拽(拖动、移动)效果,[实例教程](http://nshint.io/blog/2015/07/16/uicollectionviews-now-have-easy-reordering/).
+* [XLPlainFlowLayout](https://github.com/HebeTienCoder/XLPlainFlowLayout) - 可以让UICollectionView的header也支持悬停效果，类似于tableView的Plain风格.
+* [TMQuiltView](https://github.com/1000Memories/TMQuiltView) - 瀑布流.
+* [XRWaterfallLayout](https://github.com/codingZero/XRWaterfallLayout) - 超简单的瀑布流实现,[实现说明](http://www.cocoachina.com/ios/20160407/15872.html).
 
 #### 下拉刷新
 
@@ -435,30 +376,26 @@
 
 #### AutoLayout
 
-* [Masonry](https://github.com/SnapKit/Masonry) - 非常赞-Masonry是一个轻量级的布局框架，拥有自己的描述语法，采用更优雅的链式语法封装自动布局，简洁明了并具有高可读性（ [使用介绍1](http://adad184.com/2014/09/28/use-masonry-to-quick-solve-autolayout/)  [使用介绍2](http://ios.jobbole.com/81483/)），[iOS自适应前段库-Masonry的使用](http://www.cocoachina.com/ios/20150702/12217.html)），[Masonry、Classy、ClassyLiveLayout介绍](http://www.jianshu.com/p/2ed5f7444900)。[使用DEMO](https://github.com/lcddhr/DDMasonryTest) 视图居中显示、子视图含边距、视图等距离摆放、计算ScrollView的contentsize.
+* [Masonry](https://github.com/SnapKit/Masonry) - 非常赞-Masonry是一个轻量级的布局框架
 * [Classy](https://github.com/ClassyKit/Classy) - Classy是一个能与UIKit无缝结合stylesheet(样式)系统。它借鉴CSS的思想，但引入新的语法和命名规则，[Classy官网](http://classy.as/getting-started/)，[Masonry、Classy、ClassyLiveLayout介绍](http://www.jianshu.com/p/2ed5f7444900).
-* [ClassyLiveLayout](https://github.com/olegam/ClassyLiveLayout) - ClassyLiveLayout通过结合Classy stylesheets与Masonry一起使用，能够在运行的模拟器中微调Auto Layout约束实时显示效果的工具，[Masonry、Classy、ClassyLiveLayout介绍](http://www.jianshu.com/p/2ed5f7444900).
 * [PureLayout](https://github.com/PureLayout/PureLayout) - PureLayout 是 iOS & OS X Auto Layout 的终极 API——非常简单，又非常强大。PureLayout 通过一个全面的Auto Layout API 扩展了 UIView/NSView, NSArray 和 NSLayoutConstraint，仿照苹果自身的框架.
-* [UIView-AutoLayout](https://github.com/smileyborg/UIView-AutoLayout) -Deprecated in favor of PureLayout, which includes OS X support:https://github.com/smileyborg/PureLayout.
-* [UIView-FDCollapsibleConstraints](https://github.com/forkingdog/UIView-FDCollapsibleConstraints) - 一个AutoLayout辅助工具，最优雅的方式解决自动布局中子View的动态显示和隐藏的问题。第二个Demo模拟了一个经典的FlowLayout，任意一个元素隐藏时，底下的元素需要自动“顶”上来，配合这个扩展，你可以在IB里连一连，选一选，不用一行代码就能搞定.
 * [Autolayout_Demo](https://github.com/luodezhao/Autolayout_Demo) - 在项目中用自动布局实现的类似抽屉效果.
 * [当view隐藏的时候也隐藏其autolayout的NSLayoutAttribute](http://code.cocoachina.com/detail/320405/) - 当view隐藏的时候也隐藏其autolayout的NSLayoutAttribute，从而不用大量的代码工作.
 * [SDAutoLayout](https://github.com/gsdios/SDAutoLayout) - AutoLayout 一行代码搞定自动布局！支持Cell、Label和Tableview高度自适应，致力于做最简单易用的AutoLayout库.
-* [MyLinearLayout](https://github.com/youngsoft/MyLinearLayout) - MyLayout is a powerful iOS UI framework implemented by Objective-C. It integrates the functions with Android Layout,iOS AutoLayout,SizeClass, HTML CSS float and flexbox and bootstrap. So you can use LinearLayout,RelativeLayout,FrameLayout,TableLayout,FlowLayout,FloatLayout,PathLayout,LayoutSizeClass to build your App 自动布局 UIView UITableView UICo…
 * [WHC_AutoLayoutKit](https://github.com/netyouli/WHC_AutoLayoutKit) - Had better use the auto layout of open source framework，致力打造使用最简单功能最强大的自动布局开源库.
 * [NerdyUI](https://github.com/nerdycat/NerdyUI) - 好用的快速布局 UI 库，适用于 iOS 8 及以上版本.
 
 #### 日历三方库
 
-* [TEAChart](https://github.com/xhacker/TEAChart) - xhacker/TEAChart 一个简洁的 iOS 图表库，支持柱状图、饼图以及日历等.
+* [TEAChart](https://github.com/xhacker/TEAChart) - 一个简洁的 iOS 图表库，支持柱状图、饼图以及日历等.
 * [CVCalendar](https://github.com/Mozharovsky/CVCalendar) - 是一个方便开发者集成自定义日历视图到自己 iOS 应用的项目, 支持 Storyboard 和手动配置, 使用 CocoaPods 进行安装, 提供了丰富的 API 供开发者使用.
 * [FDCalendar](https://github.com/fergusding/FDCalendar) - A custom calendar control in iOS.
-* [FSCalendar](https://github.com/WenchaoD/FSCalendar) - 一款漂亮，强大的 iOS 日历组件 A fully customizable iOS calendar library, compatible with Objective-C and Swift.
-* [MSSCalendar](https://github.com/MSS0306/MSSCalendar) - A simple iOS Calendar 高性能日历控件（类似去哪网）.
+* [FSCalendar](https://github.com/WenchaoD/FSCalendar) - 一款漂亮，强大的 iOS 日历组件
+* [MSSCalendar](https://github.com/MSS0306/MSSCalendar) - A高性能日历控件（类似去哪网）.
 * [Calendar](https://github.com/jumartin/Calendar) - 日历、行程安排类的View和控制器。A set of views and controllers for displaying and scheduling events on iOS.
 * [HYYCalendar](https://github.com/kRadius/HYYCalendar) - 一个简单易用的日期的选择的控件，支持日历选择和Picker选择两种方式。支持iOS 6+.
 * [JTCalendar](https://github.com/jonathantribouharet/JTCalendar) - iOS下优美的 Calendar 组件，做 GTD 类 App 必备.
-* [MSCollectionViewCalendarLayout](https://github.com/erichoracek/MSCollectionViewCalendarLayout) - 日历 UICollectionViewLayout for displaying cells chronologically. Similar to the iOS Calendar app.
+* [MSCollectionViewCalendarLayout](https://github.com/erichoracek/MSCollectionViewCalendarLayout) - 日历
 
 
 #### 图表
@@ -469,7 +406,6 @@
 * [XJYChart](https://github.com/JunyiXie/XJYChart) - 优秀的的图表框架。支持动画，点击，滑动，区域高亮.
 * [AAChartKit](https://github.com/AAChartModel/AAChartKit) - 极其精美而又强大的 iOS 图表组件库,支持柱状图、条形图、折线图、曲线图、折线填充图、曲线填充图、气泡图、扇形图、环形图、散点图、雷达图、混合图等各种类型的多达几十种的信息图图表,完全满足…
 * [YOChartImageKit](https://github.com/yasuoza/YOChartImageKit) - 支持在watchOS上绘制图表，看它最近更新挺勤快的，可以关注一下.
-* [RealtimeGradientText](https://github.com/kevinzhow/RealtimeGradientText) - Fun With CALayer Mask 刚好今天开源了一个有趣的项目 RealtimeGradientText，所以也好聊一下 CALayer 的 Mask，[说明](http://blog.zhowkev.in/2015/07/06/fun-with-mask/).
 * [XYPieChart](https://github.com/xyfeng/XYPieChart) - XYPieChart:饼状图,  饼图,  数据统计,  数据可视化,可以在图形上标注数据。效果十分漂亮，而且没有用到一张图片.
 * [ZFChart](https://github.com/Zirkfied/ZFChart) - 模仿PNChart写的一个图表库，用法简单，暂时有柱状图，线状图，饼图三种类型，后续可能会更新新的类型.
 * [JYRadarChart](https://github.com/johnnywjy/JYRadarChart) - 一个很赞的图表库.
@@ -479,7 +415,7 @@
 * [Colours](https://github.com/bennyguitar/Colours) - Colours–颜色库,包含100种预定义的颜色和方法.
 * [DKNightVersion](https://github.com/Draveness/DKNightVersion) - Manage Colors, Integrate Night/Multiple Themes.
 
-#### scrollView
+#### ScrollView
 
 * [SYParallaxScrollView](https://github.com/syjdev/SYParallaxScrollView) - Useful for Configure Horizontal Parallax Scroll.
 
@@ -498,15 +434,13 @@
 
 * [MBProgressHUD](https://github.com/jdg/MBProgressHUD) - MBProgressHUD + Customizations.
 * [SVProgressHUD](https://github.com/SVProgressHUD/SVProgressHUD) - 非常赞 SVProgressHUD的loading，如果你需要定制化的等待提示器，这个就是了（也许是最好的）.
-* [JDStatusBarNotification](https://github.com/calimarkus/JDStatusBarNotification) - 非常赞👍👍👍 的自定义顶部通知.
-* [Toast](https://github.com/scalessec/Toast) - An Objective-C category that adds toast notifications to the UIView object class.
 * [EBuyCommon](https://github.com/LvJianfeng/EBuyCommon) - 1.基于MBProgressHUD实现得图形加载提示方式，及其它标题方式提醒。2.弹窗.
 * [WZDraggableSwitchHeaderView](https://github.com/wongzigii/WZDraggableSwitchHeaderView) - Show status for transition across viewControllers.
 * [ProgressHUD](https://github.com/relatedcode/ProgressHUD) - ProgressHUD的loading，使用最简单.
 * [MMProgressHUD](https://github.com/mutualmobile/MMProgressHUD) - 设置HUD出现和消失的方式（包括上下、左右、淡入淡出、放大缩小等等），设置HUD的内容（可以在HUD中加入帧动画、动态图片等等），设置HUD出现时的底部覆盖层颜色，等等。总而言之，这是一份集大成的HUD代码.
 * [WSProgressHUD](https://github.com/devSC/WSProgressHUD) - 一个小巧精致的HUD,支持添加到自定义View上, 还有更多小细节.
 * [PreLoader](https://github.com/liuzhiyi1992/PreLoader) - 一个很有意思的HUD loading ，通过运动污点和固定污点之间的粘黏动画吸引用户的眼球跟踪，能有效分散等待注意力。[PreLoader的实现讲解](http://www.cocoachina.com/ios/20160427/16029.html).
-* [FillableLoaders](https://github.com/poolqf/FillableLoaders) - 自定义加载进度UI-Completely customizable progress based loaders drawn using custom CGPaths written in Swift :large_orange_diamond:
+* [FillableLoaders](https://github.com/poolqf/FillableLoaders) - 自定义加载进度
 * [TopAlert](https://github.com/roycms/TopAlert) - 顶部提示View.
 * [CMPopTipView](https://github.com/chrismiles/CMPopTipView) - 自定义气泡View提示框.
 
@@ -541,28 +475,23 @@
 
 #### Pop
 
-* [AMPopTip](https://github.com/andreamazz/AMPopTip) - 一个可以定义frame的带动画的popover. An animated popover that pops out a given frame, great for subtle UI tips and onboarding.
-* [DXPopover](https://github.com/xiekw2010/DXPopover) - 很赞 DXPopover微信右上角的+点击展示列表效果，弹窗菜单。 A Popover mimic Facebook app popover using UIKit.
-* [zhPopupController](https://github.com/snail-z/zhPopupController) - Popup your custom view is easy, support custom mask style, transition effects and gesture to drag.
-* [GTSheet](https://github.com/gametimesf/GTSheet) - An easy to integrate solution for presenting UIViewControllers in a bottom sheet.
+* [AMPopTip](https://github.com/andreamazz/AMPopTip) - 一个可以定义frame的带动画的popover. 
+* [DXPopover](https://github.com/xiekw2010/DXPopover) - 很赞 DXPopover微信右上角的+点击展示列表效果，弹窗菜单。
 * [LewPopupViewController](https://github.com/pljhonglu/LewPopupViewController) - ios 弹出视图.
-* [YCXMenuDemo_ObjC](https://github.com/Aster0id/YCXMenuDemo_ObjC) - `TCXMenu` is an easy-to-use menu.
 * [PopMenu](https://github.com/xhzengAIB/PopMenu) - 用POP动画引擎写的Sina微博的Menu菜单.
-* [XTPopView](https://github.com/summerxx27/XTPopView) - 一个易用的带箭头的View, 可以实现类似于微信添加好友那个View的效果 (包含Objective-C和Swift版本).
+* [XTPopView](https://github.com/summerxx27/XTPopView) - 一个易用的带箭头的View, 可以实现类似于微信添加好友那个View的效果 
 * [MLMOptionSelectView](https://github.com/MengLiMing/MLMOptionSelectView) - 弹出-选择-展示框.
 * [LiquidFloatingActionButton](https://github.com/yoavlt/LiquidFloatingActionButton) - 卫星弹出菜单.
 * [HyPopMenuView](https://github.com/wwdc14/HyPopMenuView) - 模仿新浪微博弹出菜单.
-* [DOPScrollableActionSheet](https://github.com/mrhyh/DOPScrollableActionSheet) - Multi-row scrollable action sheet.
 * [DropDownMenu](https://github.com/MartinLi841538513/DropDownMenu) - 仿美团下拉菜单，二级菜单.
 
 #### 通知相关
 
-* [JSQNotificationObserverKit](https://github.com/jessesquires/JSQNotificationObserverKit) - 一款轻量、易用的通知发送及响应框架类库。作者是知名开源项目 JSQMessagesViewController（Objective-C 版即时聊天）的作者 Jesse Squires.
+* [JSQNotificationObserverKit](https://github.com/jessesquires/JSQNotificationObserverKit) - 轻量、易用的通知发送及响应框架类库。
 * [TSMessages](https://github.com/KrauseFx/TSMessages) - 易于使用和定制的消息/通知,用于 iOS版Tweetbot.
 * [CWStatusBarNotification](https://github.com/cezarywojcik/CWStatusBarNotification) - 酷炫的通知栏，多种通知样式，使用简单,非常赞👍 .
 * [GLPubSub](https://github.com/Glow-Inc/GLPubSub) - 一个简短实用的 NSNotificationCenter 的封装.
 * [JDStatusBarNotification](https://github.com/jaydee3/JDStatusBarNotification) - 在状态栏顶部显示通知。可以自定义颜色字体以及动画。支持进度显示以及显示状态指示器.
-* [obito](https://github.com/jiajunhuang/obito) - an iOS notification service out of box.
 
 #### 状态栏
 
@@ -656,9 +585,7 @@
 * [MXSegmentedPager](https://github.com/maxep/MXSegmentedPager) - 分页滚动，多个分页的pageController效果.
 * [ZJScrollPageView](https://github.com/jasnig/ZJScrollPageView) - 网易新闻, 腾讯视频, 头条 等首页的滑块视图联动的效果OC版的简单方便的集成.
 * [HMSegmentedControl](https://github.com/HeshamMegid/HMSegmentedControl) - 一个比较好用的第三方分段控制器.
-* [XHTwitterPaggingViewer](https://github.com/xhzengAIB/XHTwitterPaggingViewer) - A twitter like navigation bar, page viewer.
 * [SPPage](https://github.com/xichen744/SPPage) - 高性能PageController.
-* [SCSafariPageController](https://github.com/stefanceriu/SCSafariPageController) - A page view controller component that reproduces Mobile Safari's tab switching behavior.
 
 #### 轮播
 
@@ -688,7 +615,7 @@
 * [iOS_oShoppingCart_Demo](https://github.com/ZyZwei/iOS_oShoppingCart_Demo) - 简单实现购物车常见的筛选功能.
 * [XNQShoppingTrolley](https://github.com/342261733/XNQShoppingTrolley) - 购物车功能 基本功能仿照淘宝的购物车.
 * [ShoppingDemo](https://github.com/Zhangjingwang1993/ShoppingDemo) - iOS仿美团外卖饿了吗App点餐动画,购物车.
-* [shopCarDemobyCX](http://code.cocoachina.com/view/129430) - shopCarDemobyCX一个简易购物车效果，最重要的是可以分单结算，分单个商品结算，代理是主要技术.
+* [shopCarDemobyCX](http://code.cocoachina.com/view/129430) - 简易购物车效果，最重要的是可以分单结算，分单个商品结算，代理是主要技术.
 * [MVVM KVO购物车](http://code.cocoachina.com/view/128713) - MVVM KVO 购物车(一处计算总价钱).
 * [CartDemo](https://github.com/LQQZYY/CartDemo) - CartDemo比较完整的购物车界面及逻辑,商品展示,多选,单选,全选及滑动删除,价格计算.
 
@@ -957,7 +884,7 @@
 
 * [FastCoding](https://github.com/nicklockwood/FastCoding) - 是用来替代OSX及iOS中默认的序列化实现。它结构简单（仅头文件和.m文件两个）、支持ARC，线程安全，速度较内置实现更快.
 
-#### coreData
+#### CoreData
 
 * [CWCoreData](https://github.com/jayway/CWCoreData) - Additions and utilities to make it concurrency easier with the Core Data framework.
 * [ObjectiveRecord](https://github.com/supermarin/ObjectiveRecord) - ActiveRecord for Objective-C.
@@ -1074,8 +1001,8 @@
 
 #### 二维码
 
-* [ZXingObjC](https://github.com/TheLevelUp/ZXingObjC)  - 👍 An Objective-C Port of ZXing.
-* [LBXScan](https://github.com/MxABC/LBXScan) - 👍 A barcode and qr code scanner (二维码、扫码、扫一扫、ZXing和ios系统自带扫码封装，扫码界面效果封装)(Objective-C和Swift均支持).
+* [ZXingObjC](https://github.com/TheLevelUp/ZXingObjC)  -  An Objective-C Port of ZXing.
+* [LBXScan](https://github.com/MxABC/LBXScan) -  A barcode and qr code scanner (二维码、扫码、扫一扫、ZXing和ios系统自带扫码封装，扫码界面效果封装)(Objective-C和Swift均支持).
 * [原生实现扫描二维码条码](http://code.cocoachina.com/view/129108) - iOS原生实现扫描二维码条码.
 * [ZFScan](https://github.com/Zirkfied/ZFScan) - 仿微信 二维码/条形码 扫描.
 * [HMQRCodeScanner](https://github.com/liufan321/HMQRCodeScanner) - 包含 UI 界面的轻量级二维码扫描及生成框架，提供一个导航控制器，扫描 二维码 / 条形码；能够生成指定 字符串 + avatar(可选) 的二维码名片；能够识别相册图片中的二维码(iOS 64 位设备).
@@ -1427,9 +1354,9 @@
 
 #### 表情
 
-* [SBSAnimoji](https://github.com/simonbs/SBSAnimoji) - 🐵 Animoji app using Apples AvatarKit.
+* [SBSAnimoji](https://github.com/simonbs/SBSAnimoji) - Animoji app using Apples AvatarKit.
 * [AnimojiStudio](https://github.com/insidegui/AnimojiStudio) - Make Animoji videos with unlimited duration and share anywhere.
-* [Animoji](https://github.com/efremidze/Animoji) - Animoji Generator 🦊 .
+* [Animoji](https://github.com/efremidze/Animoji) - Animoji Generator 
 
 #### 字体
 
@@ -1579,7 +1506,7 @@
 #### 版本管理
 
 * [cocoapods安装指南](http://code4app.com/article/cocoapods-install-usage) - cocoapods安装指南.
-* [fastlane](https://github.com/fastlane/fastlane) - 非常棒👍👍👍一套iOS开发和持续集成的命令行工具fastlane，可以用来快速搭建CI甚至自动提交的开发环境。这套工具中包括了上传ipa文件，自动截取多语言截屏，生成推送证书，管理产品证书等一系列实用工具.
+* [fastlane](https://github.com/fastlane/fastlane) - 一套iOS开发和持续集成的命令行工具fastlane，可以用来快速搭建CI甚至自动提交的开发环境。这套工具中包括了上传ipa文件，自动截取多语言截屏，生成推送证书，管理产品证书等一系列实用工具.
 
 #### Git用法                                 
 
@@ -1587,8 +1514,6 @@
 * [lark](https://github.com/larkjs/lark/wiki/怎样贡献代码) - 怎样在Github上面贡献代码.
 * [my-git](https://github.com/xirong/my-git) - 有关git的学习资料.
 * [gitignore](https://github.com/github/gitignore) - .gitignore模板集合，包含了各种语言.
-* [Linus讲解git](https://www.youtube.com/watch?v=4XpnKHJAok8) - Google大会演讲，Linus介绍他创造git的原因，对比了git和svn.
-* [Git教程 - 廖雪峰的官方网站](http://www.liaoxuefeng.com/wiki/0013739516305929606dd18361248578c67b8067c8c017b000) - 史上最浅显易懂的Git教程.
 * [git - 简明指南](http://rogerdudler.github.io/git-guide/index.zh.html) - 助你入门 git 的简明指南，木有高深内容 ;)
 * [常用 Git 命令清单](http://www.ruanyifeng.com/blog/2015/12/git-cheat-sheet.html) - 来自阮一峰的网络日志，列出了 Git 最常用的命令。
 * [Pro Git（中文版）](https://git.oschina.net/progit/) - Pro Git（中文版).
@@ -1615,72 +1540,6 @@
 * [沉浸式学 Git](http://igit.linuxtoy.org/contents.html) - 简洁github教程.
 * [工作中常用的Git命令行](https://github.com/DefaultYuan/Git-Pro) - 自己在工作中常用的Git命令行的小总结.
 
-#### GitHub
-
- * [python_github_collect_star](https://github.com/Tim9Liu9/python_github_collect_star) - 收集github上项目的star数、fork数、watch数
- * [GitHub Pages 指南](http://jekyllcn.com/) - GitHub官方文档翻译版.
- * [GitHub Pages 指南 - 极客学院](http://wiki.jikexueyuan.com/project/github-pages-basics/) - GitHub Pages 官网 GitHub Pages Basics 的中文翻译版本.
- * [github-cheat-sheet](https://github.com/tiimgreen/github-cheat-sheet) - 一些酷酷的Git和GitHub功能收集.
- * [jekyll官方文档中文翻译版](http://jekyllcn.com/) - 将纯文本转换为静态博客网站.
- * [搭建一个免费的，无限流量的Blog----github Pages和Jekyll入门](http://www.ruanyifeng.com/blog/2012/08/blogging_with_jekyll.html) - 示范如何在github上搭建Blog，你可以从中掌握github的Pages功能，以及Jekyll软件的基本用法。更重要的是，你会体会到一种建立网站的全新思路.
- * [免费使用Jekyll+Github Page搭建博客入门攻略](http://www.cellier.me/2015/01/04/jekyll%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2%E6%95%99%E7%A8%8B/) - Jekyll建站
- * [jekyll 学习资料整理](https://github.com/mba811/jekyll-study) - 在学习的同时将内容整理很多相关资料.
- * [jekyll-style-guide](http://ben.balter.com/jekyll-style-guide/) - jekyll-style-guide.
- * [hexo你的博客](http://ibruce.info/2013/11/22/hexo-your-blog/) - hexo出自台湾大学生[tommy351](https://twitter.com/tommy351)之手，是一个基于Node.js的静态博客程序，其编译上百篇文字只需要几秒.
- * [如何搭建一个独立博客——简明Github Pages与Hexo教程](http://www.jianshu.com/p/05289a4bc8b2) - 详尽的独立博客搭建教程，里面介绍了域名注册、DNS设置、github和Hexo设置等过程.
- * [Hexo中文版](https://hexo.io/zh-cn/) - hexo官网中文版.
- * [像geek一样写博客](http://wiki.jikexueyuan.com/project/github-page/) - 结合了Octopress.
-
-#### GitBook
-
- * [GitBook简明教程](http://www.chengweiyang.cn/gitbook/index.html) - 本教程主要围绕 GitBook 的安装，使用，集成，书籍发布，个性化以及实用插件几个方面.
- * [Gitbook入门教程](https://yuzeshan.gitbooks.io/gitbook-studying/content/index.html) - 本书将简单介绍如何安装、编写、生成、发布一本在线图书,且示例全部在windows下展示(其他系统差不多一致).
- * [Git教学](https://kingofamani.gitbooks.io/git-teach/content/index.html) - GIT版本控制.
- * [Gitbook 使用入门](https://github.com/wwq0327/gitbook-zh) - 本书将简单介绍如何安装、编写、生成、发布一本在线图书.
- * [api-guide](https://github.com/GitbookIO/api-guide) - gitbook的api文档.
-
-#### Git文章
-
-* [如何高效利用GitHub](http://www.yangzhiping.com/tech/github.html) - 本文尝试谈谈GitHub的文化、技巧与影响.
-* [GitHub连击500天：让理想的编程成为习惯](https://www.phodal.com/blog/github-500-program-as-usual/) - phodal对于GitHub的看法.
-* [Github装逼指南——Travis CI 和 Codecov](https://segmentfault.com/a/1190000004415437) - 关于持续集成和统计单测覆盖率.
-* [如何用Github去管理你的Idea](http://zhuanlan.zhihu.com/phodal/20442311) - 用Github的README.md和Issues来管理我的idea.
-* [GitHub开源项目负责人谈开源](http://www.infoq.com/cn/news/2015/10/GitHub-OpenSource) - Brandon就其与开源的缘分、当前工作的职责、GitHub及员工与开源的关系等方面的问题一一进行了回答.
-* [亲爱的GitHub](https://github.com/dear-github/dear-github) - 致GitHub的一封公开信.
-* [thank-you-github](https://github.com/thank-you-github/thank-you-github) - 一封从GitHub毕业的公开信.
-* [用Github issues作为blog的例子](https://github.com/lifesinger/blog/labels/blog)- 用Github issues作为blog的例子.
-* [2014年GitHub 中国开发者年度报告](http://githuber.info/report) - 使用python分析数据后的报告.
-* [Gist介绍与用法](http://platinhom.github.io/2015/11/26/gist/) - Gist https://gist.github.com/ 是Github的一个子服务.
-* [最活跃的GitHub用户](https://gist.github.com/paulmillr/2657075/) - 想看最活跃用户可以看这里.
-* [10个立即提高你生产力的GitHub技能](http://usersnap.com/blog/github-hacks-productivity/)
-* [Top 10 Git Tutorials for Beginners](http://sixrevisions.com/resources/git-tutorials-beginners/) - 教你使用git最好的10本书.
-* [使用GitHub进行团队合作](http://xiaocong.github.io/blog/2013/03/20/team-collaboration-with-github/) - 译文.
-* [一键收藏至Github](http://www.jianshu.com/p/19d2f3a3b5d8) - 通过 Rails 收藏文章，并自动提交至 github.
-* [Github Hacking](http://www.jianshu.com/p/d6b54f1d60f1) - Github的各种黑客技能.
-* [如何参与一个GitHub开源项目？](http://www.csdn.net/article/2014-04-14/2819293-Contributing-to-Open-Source-on-GitHub) - 如何参与一个GitHub开源项目?
-* [试译：开源项目成功的十条准则](http://www.zhuangbiaowei.com/blog/?cat=31) -作者将自己30年来的开发经验，总结为开源软件的十条成功法则。
-* [漫谈Github与开源](http://www.wdk.pw/802.html) -本文作者为大二在读Geek学生关于GitHub与开源的理解。
-* [关于Pull Request的十个建议](http://blog.ploeh.dk/2015/01/15/10-tips-for-better-pull-requests/) - 作者Mark Seemann.
-* [Github上都有哪些有用但不为大家熟知的小功能？](https://www.zhihu.com/question/36974348)
-* [如果你用GitHub，可以这样提高效率](http://huang-jerryc.com/2016/01/15/%E5%A6%82%E6%9E%9C%E4%BD%A0%E7%94%A8GitHub%EF%BC%8C%E5%8F%AF%E4%BB%A5%E8%BF%99%E6%A0%B7%E6%8F%90%E9%AB%98%E6%95%88%E7%8E%87/) - 基于Github，搭建一整套代码管理服务
-* [如何选择开源许可证？](http://www.ruanyifeng.com/blog/2011/05/how_to_choose_free_software_licenses.html) - 六种开源协议GPL、BSD、MIT、Mozilla、Apache和LGPL之间的区别.
-* [如何用好github中的watch、star、fork](http://www.jianshu.com/p/6c366b53ea41) - 介绍watch、star、fork的具体作用.
-* [git-commit-guide](https://github.com/bluejava/git-commit-guide) - git commit message 指南.
-* [git操作是不是很难记住？](http://www.jianshu.com/p/e870fdd971fc) - 笔者试着分类git的常用操作，方便同样是刚入门git的你查阅.
-* [GUI for git|SourceTree|入门基础](http://www.jianshu.com/p/be9f0484af9d) - SourceTree简介.
-* [话说Svn与Git的区别](http://www.jianshu.com/p/bfec042349ca) - SVN的特点是简单，只是需要一个放代码的地方时用是OK的。Git的特点版本控制可以不依赖网络做任何事情，对分支和合并有更好的支持.
-* [多用Git少交税](http://www.jianshu.com/p/8a985c622e61)
-* [Git版本控制与工作流](http://www.jianshu.com/p/67afe711c731) - 针对git版本控制和工作流的总结.
-* [在github上写博客](http://www.jianshu.com/p/1260517bbedb)
-* [GitHub & Bitbucket & GitLab & Coding 的对比分析](http://blog.flow.ci/github-bitbucket-gitlab-coding)
-
-#### GithubRank
-
-* [GitHub Rank (China)](http://githubrank.com/) - GitHub上中国程序员的排名网站，根据follower.
-* [GitHub Ranking | GitHub Awards](http://github-awards.com/) - GitHub上程序员的排名网站，根据star.
-* [GitHub Ranking](https://github-ranking.com/) - GitHub用户和仓库排名，根据star，不区分语言.
-* [diycode - GitHub Ranking](http://www.diycode.cc/trends) - GitHub 全球 Developers, Organizations and Repositories 排行榜.
-
 #### 桌面工具
 
 * [ohmystar](http://www.ohmystarapp.com/) - Mac上管理你GitHub star的工具
@@ -1693,83 +1552,17 @@
 
 #### Github客户端
 
-* [MVVMReactiveCocoa](https://github.com/leichunfeng/MVVMReactiveCocoa) - GitBucket iOS App，一个GitHub第三方客户端.
-* [Monkey](https://github.com/coderyi/Monkey) - Monkey是一个GitHub第三方iOS客户端，主要是用来展示GitHub上的开发者的排名，以及仓库的排名.
-* [react-native-gitfeed](https://github.com/xiekw2010/react-native-gitfeed) - 一个React Native写的Github客户端，支持iOS和Android.
-* [githot](https://github.com/andyiac/githot) - GitHot是一个Android App,用来发现世界上最流行的项目和人.
 * [CodeHub](https://github.com/thedillonb/CodeHub) - CodeHub是C#写的，它是iOS设备上最好的GitHub仓库浏览和维护工具.
 * [ioctocat](https://github.com/dennisreimann/ioctocat) - GitHub的iOS客户端.
 * [napcat](https://itunes.apple.com/cn/app/napcat-github-client-for-open/id606238223?mt=8) - 一个比较全面的GitHub的iOS客户端.
-* [RepoStumble](https://github.com/thedillonb/RepoStumble) - 查看GitHub仓库的手机客户端.
-* [GithubTrends](https://github.com/laowch/GithubTrends) - Material Design风格的查看GitHub仓库trending app.
 * [ForkHub](https://github.com/jonan/ForkHub) - Android平台的GitHub客户端.
-* [GitEgo](https://github.com/hrules6872/GitEgo) - Android平台的GitHub客户端.
-* [Sources](https://github.com/vulgur/Sources) - 一个极简的 Github 客户端，Sources。内置几十个语法高亮的主题可供选择.
 * [igithub](https://github.com/schacon/igithub) - github 的iOS端.
-* [gitmonitor-ios](https://github.com/theotow/gitmonitor-ios) - 一个通知你不用再push代码的iOS app.
-* [GithubWidget](https://github.com/Nightonke/GithubWidget) - 轻量级显示Github用户的贡献、星数、Follower数、热门仓库的App.
-* [GitPocket](https://github.com/jindulys/GitPocket) - Swift编写GitHub客户端.
-* [GitHubContributionsiOS](https://github.com/JustinFincher/GitHubContributionsiOS) - 显示你的GitHub Contributions的Today Extension,App Store链接,[Contributions for GitHub](https://itunes.apple.com/us/app/contributions-for-github/id1153432612?l=zh&ls=1&mt=8).
-* [PPHub](https://github.com/jkpang/PPHub-Feedback) - 一个漂亮的GitHub iOS客户端, 使用Swift编写
 
 #### Github插件
 
-* [octotree](https://github.com/buunguyen/octotree) - 浏览器扩展，树状格式显示GitHub的代码.
-* [octo-linker](https://github.com/octo-linker/chrome-extension) - 这款谷歌 Chrome 扩展允许您轻松地浏览 GitHub.com 上的文件和包.
-* [github-hovercard](https://github.com/Justineo/github-hovercard) - GitHub Hovercard 是一个浏览器扩展，实现了展示用户在 Github 上信息的信息卡功能，支持 Firefox 和 Chrome 浏览器.
-* [notifier-for-github-chrome](https://github.com/sindresorhus/notifier-for-github-chrome) - 一个浏览器扩展，它能显示 Github 通知的未读数量.
-* [github-menu-back](https://github.com/summerblue/github-menu-back) - 一款修改 GitHub 导航栏为之前状态的 Chrome 插件.
-* [gitsense-extensions](https://github.com/gitsense/gitsense-extensions) - GitSense 是一个 Chrome 插件，可以让你在浏览 Github 的时候体验更好.
-* [git-draw](https://github.com/ben174/git-draw) - 谷歌 Chrome 扩展，给GitHub提交历史画个画.
-* [ShowInGitHub](https://github.com/larsxschneider/ShowInGitHub) - Xcode插件，打开选中行的GitHub提交页面.
-* [Reveal-In-GitHub](https://github.com/lzwjava/Reveal-In-GitHub) - 有关GitHub的Xcode插件.
-* [Visual Studio](https://github.com/github/VisualStudio) - 有关GitHub的Visual Studio插件.
-* [github-sublime-theme](https://github.com/AlexanderEkdahl/github-sublime-theme) - GitHub Sublime 主题.
-* [GitHubinator](https://github.com/ehamiter/GitHubinator) - sublime插件，显示选中文本上的远程GitHub仓库.
-* [alfred-github-workflow](https://github.com/gharlan/alfred-github-workflow) - Alfred 2上使用GitHub命令.
-* [ZenHub](https://github.com/ZenHubIO/support) -ZenHub 能优化你的 GitHub 工作流，是轻量级的 Chrome 浏览器插件.
-* [github-gmail](https://github.com/muan/github-gmail) - 在Gmail内快速打开GitHub的通知.
-* [chrome-github-avatars](https://github.com/anasnakawa/chrome-github-avatars) - 谷歌Chrome扩展，可以让你的GitHub主页显示用户的头像.
-* [tab-size-on-github](https://github.com/sindresorhus/tab-size-on-github) - 谷歌Chrome和Opera扩展，让代码缩进为4个空格而不是8个.
-* [hide-files-on-github](https://github.com/sindresorhus/hide-files-on-github) - 谷歌Chrome和Opera扩展，隐藏点文件.
-* [github-highlight-selected](https://github.com/Nuclides/github-highlight-selected) - 谷歌Chrome和Safari扩展，代码高亮，看起来像sublime.
-* [github-awesome-autocomplete](https://github.com/algolia/github-awesome-autocomplete) - 谷歌Chrome和Safari以及Firefox扩展，在GitHub的搜索栏加入自动补全功能.
-* [chrome-github-mate](https://github.com/rubyerme/chrome-github-mate) - 谷歌Chrome扩展，下载单个文件.
-* [Pages2Repo](https://github.com/Frozenfire92/Pages2Repo) - 谷歌Chrome扩展，通过GitHub Pages网站就能访问仓库.
-* [lovely-forks](https://github.com/musically-ut/lovely-forks) - 谷歌Chrome扩展，显示fork你仓库中star最多的.
-* [github-pr-filter](https://github.com/danielhusar/github-pr-filter) - 谷歌Chrome扩展，在pr中过滤文件.
-* [github-ast-viewer](https://github.com/lukehorvat/github-ast-viewer) - 谷歌Chrome扩展，增加代码的抽象语法树.
-* [github-canned-responses](https://github.com/notwaldorf/github-canned-responses) - 谷歌Chrome扩展，评论pr或者issue的时候有一些可选项.
-* [categoric](https://github.com/ozlerhakan/categoric) - 谷歌Chrome扩展，为你的通知分类.
-* [octo-preview](https://github.com/DrewML/octo-preview) - 谷歌Chrome扩展，预览你评论的markdown内容.
-* [GifHub](https://github.com/DrewML/GifHub) - 谷歌Chrome扩展，GifHub一个往GitHub评论里边插入Gif动画的Chrome插件.
-* [star-history-plugin](https://github.com/timqian/star-history-plugin) - 查看仓库star历史的插件.
-* [open-on-github](https://github.com/atom/open-on-github) - atom插件，打开文件在github.com.
-* [refined-github](https://github.com/sindresorhus/refined-github) - chrome插件，简化你的github，增加了一些可用的功能.
-* [gitpress](https://github.com/enricob/gitpress) - github的wordpress插件，用于列出用户的仓库.
-* [jquery-github](https://github.com/zenorocha/jquery-github) - jquery的插件显示github仓库.
-* [sublime-text-git](https://github.com/kemayo/sublime-text-git) - sublime的git插件.
-* [git-plugin](https://github.com/jenkinsci/git-plugin) - jenkins的git插件.
-* [github-oauth-plugin](https://github.com/jenkinsci/github-oauth-plugin) - jenkins的github oauth登录插件.
-* [twitter-for-github](https://github.com/bevacqua/twitter-for-github) - 在github上显示用户twitter的chrome插件.
-* [Hudson-GIT-plugin](https://github.com/magnayn/Hudson-GIT-plugin) - Hudson上的GIT插件.
-* [git-time-machine](https://github.com/littlebee/git-time-machine) - atom插件查看提交历史.
-* [GitDiff](https://github.com/johnno1962/GitDiff) - Xcode插件.
-* [vim-gitgutter](https://github.com/airblade/vim-gitgutter) - git的vim 插件.
 
 #### Git平台与工具
 
-* [git](https://github.com/git/git) - git源码.
-* [sourcetree](https://www.atlassian.com/software/sourcetree) - Windows 和Mac OS X 下免费的 Git客户端.
-* [gitbucket](https://github.com/gitbucket/gitbucket) - Scala编写的开源Git平台，扩展性好，兼容GitHub.
-* [gogs](https://github.com/gogits/gogs) - Gogs (Go Git Service) 是一款极易搭建的自助 Git 服务.
-* [gitlab](https://github.com/gitlabhq/gitlabhq) - 一个用于仓库管理系统的开源项目.
-* [git-annex](https://github.com/joeyh/git-annex) - git管理大文件.
-* [gitx](https://github.com/pieter/gitx) - Mac平台上的Git GUI客户端.
-* [gity](https://github.com/beheadedmyway/gity) - mac的git客户端.
-* [svn2git](https://github.com/nirvdrum/svn2git) - ruby 实现的迁移svn工程到git.
-* [stupidgit](https://github.com/gyim/stupidgit) - python编写的git的跨平台GUI.
-* [GitUp](https://github.com/git-up/GitUp) - Objective-C编写的Mac上的Git客户端.
 
 #### 命令行
 
@@ -1826,39 +1619,13 @@
 #### Git库
 
 * [octokit](https://github.com/octokit) - GitHub API的官方封装库.
-* [GitHub Java API (org.eclipse.egit.github.core)](https://github.com/eclipse/egit-github/tree/master/org.eclipse.egit.github.core) - eclipse出品，Java写的GitHub API的封装库.
-* [github - michael](https://github.com/michael/github) - JavaScript写的GitHub API的封装库.
 * [PyGithub](https://github.com/PyGithub/PyGithub) - Python的GitHub API封装库.
 * [UAGithubEngine](https://github.com/owainhunt/uagithubengine) - Objective-C的GitHub API封装库.
-* [RxGitHubAPI](https://github.com/FengDeng/RxGitHubAPI) - 基于RxSwift的GitHub API封装库.
-* [GitHub API for Java](http://github-api.kohsuke.org/) - 面向对象的GitHub API库.
 * [GitHubObjC](https://github.com/ernstsson/GitHubObjC) - Objective-C实现的GitHub API库.
-* [go-github](https://github.com/google/go-github) - Go实现的GitHub API库.
-* [ruby-github](https://github.com/peter-murach/github) - Ruby实现的GitHub API库.
-* [libgit2](https://github.com/libgit2/libgit2) - Git核心库，通过它可以写一个自己的git应用.
-* [Gift](https://github.com/modocache/Gift) - 通过Swift绑定libgit2，通过它你可以clone一个仓库，查看commit，提交等.
-* [gitkit-js](https://github.com/SamyPesse/gitkit-js) - gitkit-js，SamyPesse开源的git的javascript实现，包含一系列API,可以管理git仓库，包括读文件，commit， clone，push，fetch等，可以工作在浏览器和node.js上.
-* [github3.py](https://github.com/sigmavirus24/github3.py) - GitHub API v3的python接口.
-* [PyGithub](https://github.com/PyGithub/PyGithub) - GitHub API v3的python接口.
-* [github-backup](https://github.com/joeyh/github-backup) - 备份GitHub仓库，包括branches, tags, other forks, issues, comments, wikis, milestones, pull requests, watchers, stars. 通过haskell编写.
-* [github - Haskell](https://github.com/PyGithub/PyGithub) - GitHub API 的Haskell接口.
 * [objective-git](https://github.com/schacon/objective-git) - Git的Objective-C实现.
-* [node-gitlab](https://github.com/node-gitlab/node-gitlab) - gitlab的node api.
-* [php-github-api](https://github.com/KnpLabs/php-github-api) - php的github api.
 * [cocoagit](https://github.com/geoffgarside/cocoagit) - git的objetive-c实现.
-* [ruby-github](https://github.com/mbleigh/ruby-github) - mbleigh写的ruby的github api.
 * [Git.framework](https://github.com/geoffgarside/Git.framework) - mac os x 平台的objective-c的git实现.
-* [pygit2](https://github.com/libgit2/pygit2) - libgit2的python版.
-* [git.js](https://github.com/danlucraft/git.js) - git的js实现.
-* [nodegit](https://github.com/nodegit/nodegit) - git的node实现.
-* [GitSharp](https://github.com/henon/GitSharp) - .Net实现的git.
-* [erlangit](https://github.com/schacon/erlangit) - erlang 的git实现.
-* [github4j](https://github.com/defunct/github4j) - 一个github 下载的java api.
-* [libgit2sharp](https://github.com/libgit2/libgit2sharp) - .Net实现的git.
-* [Gift](https://github.com/modocache/Gift) - Swift编写的git实现.
-* [SwiftGit2](https://github.com/SwiftGit2/SwiftGit2) - Swift编写的git实现.
-* [GithubPilot](https://github.com/jindulys/GithubPilot) - Swift的GitHub API 封装.
-* [GitYourFeedback](https://github.com/gabek/GitYourFeedback) - 让你可以直接在iOS App内feedback时向GitHub提交issue.
+
 
 #### Github浏览器工具
 
@@ -1878,25 +1645,24 @@
 
 #### 深度链接
 
-* [DeepLinkKit](https://github.com/button/DeepLinkKit) - 深度链接，A splendid route-matching, block-based way to handle your deep links.
+* [DeepLinkKit](https://github.com/button/DeepLinkKit) - 深度链接
 
 #### 测试调试
 
-* [FLEX](https://github.com/Flipboard/FLEX) 非常赞👍👍👍 的 一个Xcode界面调试工具，FLEX是一个需要注入式的一种框架，从描述来看，功能非常多。主要来讲的话能够对正在运行的应用进行样式的修改和控件的读取。FLEX会赐予你SuperPower！！！
+* [FLEX](https://github.com/Flipboard/FLEX) 一个Xcode界面调试工具，FLEX是一个需要注入式的一种框架，从描述来看，功能非常多。主要来讲的话能够对正在运行的应用进行样式的修改和控件的读取。FLEX会赐予你SuperPower
   1. 可以查看控件的坐标和属性
   2. 看任何一个对象的属性和成员变量
   3. 动态修改属性和成员变量
   4. 动态的调用实例和类方法
 FLEX正因为是注入式的，所以不需要在链接LLDB或者Xocde，或者是远程的调试服务器，它可以在本地随时随地的进行自有的操作和调试
-* [Quick](https://github.com/Quick/Quick) - 非常赞👍👍👍 用于Swift中的单元测试（也可用于Objective-C），与Xcode整合在一起。如果你是Objective-C的粉丝，我建议用Specta代替这个，但是对Swift使用者来说，Quick是最佳选择.
 * [KIF](https://github.com/kif-framework/KIF) - 是一个开源的用户界面UI测试框架. 使用 KIF, 并利用 iOS中的辅助功能 API, 你将能够编写模拟用户输入，诸如点击，触摸和文本输入，自动化的UI测试.
 * [FBSimulatorControl](https://github.com/facebook/FBSimulatorControl) - 支持同时启动多个模拟器的库，FaceBook出品.
 * [calabash-ios](https://github.com/calabash/calabash-ios) - 自动测试 Calabash is an automated testing technology for Android and iOS native and hybrid applications.
 * [Buildasaur](https://github.com/czechboy0/Buildasaur) 自动测试框架 Automatic testing of your Pull Requests on GitHub and BitBucket using Xcode Server. Keep your team productive and safe. Get up and running in minutes. buildasaur
 * [MLeaksFinder](https://github.com/Tencent/MLeaksFinder) - 内存泄露检测工具.
-* [IPAPatch](https://github.com/Naituw/IPAPatch) 免越狱调试、修改第三方App，👍👍 .
+* [IPAPatch](https://github.com/Naituw/IPAPatch) 免越狱调试、修改第三方App
 * [CocoaLumberjack](https://github.com/CocoaLumberjack/CocoaLumberjack) - 是一个快速、简单，但很强大的日志框架，可以自定义打印日志的颜色.
-* [iOS-Performance-Optimization](https://github.com/skyming/iOS-Performance-Optimization) - 关于iOS 性能优化梳理、内存泄露、卡顿、网络、GPU、电量、 App 包体积瘦身、启动速度优化等、Instruments 高级技巧、常见的优化技能- Get — Edit.
+* [iOS-Performance-Optimization](https://github.com/skyming/iOS-Performance-Optimization) - 关于iOS 性能优化梳理、内存泄露、卡顿、网络、GPU、电量、 App 包体积瘦身、启动速度优化等、Instruments 高级技巧、常见的优化技能 - Get — Edit.
 * [FBMemoryProfiler](https://github.com/facebook/FBMemoryProfiler) - Facebook出品,内存检测库.FBMemoryProfiler 基础教程](http://ifujun.com/fbmemoryprofiler-shi-yong-ji-chu-jiao-cheng/)。(https://swiftcafe.io/2017/05/02/mem-profiler/?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io)
 * [xctool](https://github.com/facebook/xctool) - Facebook出的自动化打包工具，它规范了输出的log日志，而且一些错误信息也更为清晰一些.
 * [MSLeakHunter](https://github.com/mindsnacks/MSLeakHunter) - 自动检测 UIViewController 和 UIView 对象的内存泄露。Find memory leaks in your iOS app at develop time. [MLeaksFinder 的使用参照](https://github.com/Zepo/MLeaksFinder).
@@ -1912,9 +1678,6 @@ FLEX正因为是注入式的，所以不需要在链接LLDB或者Xocde，或者�
 * [Versions](https://github.com/zenangst/Versions) - 版本比较小工具.
 * [MobileWebPageTest](http://code4app.com/ios/MobileWebPerformanceTest/5465d3e9933bf00c658b4f43) - MobileWebPageTest是用来测试移动网页性能的软件，它可以对页面的加载和渲染过程进行截屏，协助开发者分析出页面性能瓶颈.
 * [WebDriverAgent](https://github.com/facebook/WebDriverAgent) - Facebook 推出了一款新的iOS移动测试框架 A WebDriver server for iOS that runs inside the Simulator.
-.
-* [specta](https://github.com/specta/specta) - TDD或BDD，objective-c语言的测试框架，用的人多.
-* [cedar](https://github.com/pivotal/cedar) - TDD或BDD，objective-c语言的测试框架，用的人少.
 * [cedar](https://github.com/cedarbdd/cedar) - BDD-style testing using Objective-C.
 * [KKLog](https://github.com/Coneboy-k/KKLog) - 一个日志管理系统.
 * [Buildasaur](https://github.com/czechboy0/Buildasaur) - 自动测试框架 Buildasaur.
@@ -2052,9 +1815,13 @@ FLEX正因为是注入式的，所以不需要在链接LLDB或者Xocde，或者�
 * [自定义转场动画](http://www.jianshu.com/p/38cd35968864) - 3 种方法～ 关于自定义转场动画。
 * [用 JSON 构建 API 的标准指南](http://jsonapi.org.cn/) - 用 JSON 构建 API 的标准指南。
 * [iOS创建半透明ViewController](http://miketech.it/ios-transparent-viewcontroller/) - iOS创建半透明ViewController。
-* [iOS蓝牙开发（四）：BabyBluetooth蓝牙库介绍](http://www.cocoachina.com/ios/20160219/15301.html) - [iOS蓝牙开发（一）蓝牙相关基础知识](http://www.cocoachina.com/ios/20150915/13454.html),[iOS蓝牙开发（二）：iOS连接外设的代码实现](http://www.cocoachina.com/ios/20160217/15294.html),[iOS蓝牙开发（三）：App作为外设被连接的实现](http://www.cocoachina.com/ios/20160218/15299.html)。
+* [iOS蓝牙开发（一）蓝牙相关基础知识](http://www.cocoachina.com/ios/20150915/13454.html)
+* [iOS蓝牙开发（二）：iOS连接外设的代码实现](http://www.cocoachina.com/ios/20160217/15294.html)
+* [iOS蓝牙开发（三）：App作为外设被连接的实现](http://www.cocoachina.com/ios/20160218/15299.html)
+* [iOS蓝牙开发（四）：BabyBluetooth蓝牙库介绍](http://www.cocoachina.com/ios/20160219/15301.html)
 * [统计项目中图片使用情况](http://blog.adorkabledean.cn/blog/20151027/tong-ji-xiang-mu-zhong-tu-pian-shi-yong-qing-kuang/) - 统计项目中图片使用情况;工具：[Unused](http://jeffhodnett.github.io/Unused/):找出项目中未使用的图片, Unused 的基础上改了一下的[LSUnusedResources](https://github.com/tinymind/LSUnusedResources);工具：[ImageOptim](https://imageoptim.com/) 图片保真压缩。【iOS图片压缩工具】效率最高的是[tiny-png](http://www.alfredforum.com/topic/1520-tiny-png-workflow-updated-to-v12/):在线压缩，前500张免费。
-* [iOS推送之远程推送](http://ios.jobbole.com/83952/) 、[iOS推送之本地推送](http://ios.jobbole.com/83949/)。
+* [iOS推送之远程推送](http://ios.jobbole.com/83952/) - iOS推送之远程推送
+* [iOS推送之本地推送](http://ios.jobbole.com/83949/) - iOS推送之本地推送
 * [动态部署方案](http://www.cocoachina.com/ios/20151019/13761.html) - iOS应用架构谈动态部署方案。
 * [ReactiveCocoa 4 文档翻译目录](http://www.jianshu.com/p/fccba7be1ca1) - ReactiveCocoa 4 文档翻译目录。    
 * [每个Xcode开发者应该知道的七个使用技巧](http://www.cocoachina.com/ios/20160304/15558.html) - 每个Xcode开发者应该知道的七个使用技巧。
@@ -2096,51 +1863,34 @@ FLEX正因为是注入式的，所以不需要在链接LLDB或者Xocde，或者�
 
 #### 学习资料
 
-* [free-programming-books](https://github.com/EbookFoundation/free-programming-books) - 非常棒👍👍👍 经常更新的免费资源列表，包括书籍，播客，网站，开发工具等等。
-* [coding-interview-university](https://github.com/jwasham/coding-interview-university) 非常棒👍👍👍 A complete computer science study plan to become a software engineer.
+* [free-programming-books](https://github.com/EbookFoundation/free-programming-books) - 经常更新的免费资源列表，包括书籍，播客，网站，开发工具等等。
 * [Analyze](https://github.com/Draveness/Analyze) - 深入解析 iOS 开源项目.
 * [articles](https://github.com/objccn/articles) - Articles for objccn.io. objc.io的完整、准确、优雅的中文翻译版本.
 * [iOSInterviewQuestions](https://github.com/ChenYilong/iOSInterviewQuestions) - iOS面试题集锦（附答案）.
-* [growth-ebook](https://github.com/phodal/growth-ebook) - Growth Engineering: The Definitive Guide,全栈增长工程师指南.
-* [ideabook](https://github.com/phodal/ideabook) - 一个全栈增长工程师的练手项目集. A Growth Engineering Idea in Action.
-* [zen](https://github.com/100mango/zen) - iOS, Swift, Objective-C 心得.
-* [objc-zen-book-cn](https://github.com/oa414/objc-zen-book-cn) - 禅与 Objective-C 编程艺术 （Zen and the Art of the Objective-C Craftsmanship 中文翻译）.
+* [growth-ebook](https://github.com/phodal/growth-ebook) - 全栈增长工程师指南.
+* [ideabook](https://github.com/phodal/ideabook) - 一个全栈增长工程师的练手项目集
 * [dev-blog](https://github.com/nixzhu/dev-blog) - 翻译、开发心得或学习笔记.
-* A-[awesome-awesomeness](https://github.com/bayandin/awesome-awesomeness) - GitHub上所有Awesome Awesomeness 系列集合. 这个系列集合收集上GitHub上优秀的开源项目、框架、书籍、网站、类库等实用资源的集合.
+* [awesome-awesomeness](https://github.com/bayandin/awesome-awesomeness) - GitHub上所有Awesome Awesomeness 系列集合. 这个系列集合收集上GitHub上优秀的开源项目、框架、书籍、网站、类库等实用资源的集合.
 * [豆瓣iOS开源库列表](https://www.douban.com/note/276160185/?type=like) - 豆瓣iOS开源库列表，很多开源项目.
-* [RemoteControl](https://github.com/johnno1962/Remote) - Control your iPhone from inside Xcode for end-to-end testing.
 * [iOS](https://github.com/Lafree317/iOS) - iOS资源大全中文版.
 * [MVVM 介绍](http://objccn.io/issue-13-1/) - 替换MVC的开发模式.
 * [第三方接口](http://apistore.baidu.com/astore/index) - 基本所有第三方接口都在这，再也不用那么麻烦去找了.
-* [禅与 Objective-C 编程艺术](https://github.com/oa414/objc-zen-book-cn) - 禅与 Objective-C 编程艺术 （Zen and the Art of the Objective-C Craftsmanship 中文翻译）.
-* [Objective-C编码规范：26个方面解决iOS开发问题](http://www.imooc.com/article/1216) - 【Objective-C编码规范：26个方面解决iOS开发问题：“我们制定Objective-C编码规范的原因是我们能够在我们的书，教程和初学者工具包的代码保持优雅和一致。”今天分享的规范来自raywenderlich.com团队成员共同完成的，希望对学习OC的朋友们有所指导和帮助.
-* [demo](https://github.com/coolnameismy/demo) - 刘彦玮的技术博客中文章对应的demo.
 * [awesome-growth](https://github.com/phodal/awesome-growth) - IT技能图谱.
 
 #### 其他开源
 
-* [awesome-ios](https://github.com/vsouza/awesome-ios) 一个非常棒👍👍👍 的开源库集合.
-* [awesome-osx](https://github.com/iCHAIT/awesome-osx) - 一个非常棒👍👍👍的Mac OS X开源库集合。
 * [open-source-ios-apps](https://github.com/dkhamsing/open-source-ios-apps) - iOS开源App集合(swift、Objective-C).
 * [awesome-ios-ui](https://github.com/cjwirth/awesome-ios-ui) - 收集了不少 iOS UI/UX 库, 包含了很多酷炫的动画效果.
 * [awesome-mac](https://github.com/jaywcjlove/awesome-mac)  - Mac软件、开发工具、设计工具集合.
 * [ios-cosmos](http://www.ios-cosmos.com/) - The iOS Cosmos：收录了iOS绝大部分的开源框架和工具.
-* [Awesome Haskell资料大全](https://haskell.zeef.com/konstantin.skipor#block_28362_basics) - Awesome Haskell 资料大全：框架，库和软件.
 * [Cosmos](http://ios-cosmos.com) - The iOS Cosmos：收录了IOS绝大部分的开源框架和工具.
 * [cocoacontrols](https://www.cocoacontrols.com/) -  收集了很多UI控件效果代码，缺点是需要翻墙，而且代码分类不够好。
 * [lexrus](https://github.com/lexrus) -  lexrus国内出名的iOS开源coder，非常酷的label动画、textfield动画。
-* [适合iOS开发者的15大网站推荐](http://www.csdn.net/article/2015-03-04/2824108-ios-developers-sites) -  适合 iOS 开发者的 15 大网站推荐 --- 英文网站。
-* [Objective-C GitHub 排名前 100 项目简介](https://github.com/Aufree/trip-to-iOS/blob/master/Top-100.md) -  主要对当前 GitHub 排名前 100 的项目做一个简单的简介, 方便初学者快速了解到当前 Objective-C 在 GitHub 的情况。
 * [Github-iOS备忘](http://github.ibireme.com/github/list/ios/) - 整理了比较常用的iOS第三方组件，以及github上的统计.
 * [超全！整理常用的iOS第三方资源](http://www.cocoachina.com/ios/20160121/14988.html) - 超全！整理常用的iOS第三方资源.
-* [MyGithubMark](https://github.com/JanzTam/MyGithubMark) - Github上的iOS资料-个人记录（持续更新).
 * [Github 上的 iOS 开源项目](http://ios.jobbole.com/84684/) - Github 上的 iOS 开源项目总结.
-* [iOS资源大全中文版](https://github.com/jobbole/awesome-ios-cn) - iOS资源大全中文版.
-* [LearningIOS](https://github.com/zhouhuanqiang/LearningIOS) - Learning materials of iOS.
-* [Dev-Repo](https://github.com/DevDragonLi/Dev-Repo) - 学习经验、面试题等集合.
-* [awesome-github](https://github.com/AntBranch/awesome-github) - awesome-github:收集这个列表，只是为了更好地使用亲爱的GitHub。
-* [freeCodeCamp](https://github.com/freeCodeCamp/freeCodeCamp) - The https://freeCodeCamp.org open source codebase and curriculum. Learn to code and help nonprofits.
-* [Show](https://github.com/CharlinFeng/Show) - 成都地区一个公司开源项目目录.
+* [iOS资源大全中文版](https://github.com/jobbole/awesome-ios-cn) - iOS资源大全中文版
+* [Dev-Repo](https://github.com/DevDragonLi/Dev-Repo) - 学习经验、面试题等集合
 * [EFArticles](https://github.com/EyreFree/EFArticles) - EyreFree 存放所发布的各种水文的仓库.
 
 #### 博客
@@ -2202,10 +1952,45 @@ FLEX正因为是注入式的，所以不需要在链接LLDB或者Xocde，或者�
 
 * [TrafficLights-DeepLearning-iOS](https://github.com/asavihay/TrafficLights-DeepLearning-iOS) 利用Caffe深度学习执着的一个交通灯信号检测App
 
-#### game
+#### 框架                                               
 
-* [Retro](https://github.com/OpenEmu/OpenEmu) - 🕹 Retro video game emulation for macOS.
-* [Game Off 2017 winners](https://github.com/blog) - Game Off 2017 winners Github.
+* [nimbus](https://github.com/jverkoey/nimbus)  - Nimbus是一个开源的iOS框架，实现很多非常炫的界面特效.
+* [ReactiveCocoa](https://github.com/ReactiveCocoa/ReactiveCocoa) - ReactiveCocoa受函数响应式编程激发。不同于使用可变的变量替换和就地修改，RAC提供Signals来捕获当前值和将来值（ [使用介绍](http://yulingtianxia.com/blog/2014/07/29/reactivecocoa/) ）
+* [CYLTabBarController](https://github.com/ChenYilong/CYLTabBarController) - 低耦合集成TabBarController,最低只需传两个数组即可完成主流App框架搭建.
+* [samurai-native](https://github.com/hackers-painters/samurai-native) - 是一个基于浏览器内核通过HTML+CSS 开发原生移动应用的iOS框架.
+* [HHRouter](https://github.com/Huohua/HHRouter) - 一言以蔽之，URL Router 即将 UIViewController 映射成 URL，从而支持通过 URL 进行界面跳转。是的，就和 Web 一样。当然，这并不是 Web Developer 转职为 iOS Developer 后所做的无聊玩具。URL Router 有着许多切实的好处.
+* [AsyncDisplayKit](https://github.com/facebook/AsyncDisplayKit) - 异步界面渲染库,为极限优化View效果而生（同时提供 UIView bridge 接口）.
+* [publishImageAndVideoAnsRecord](https://github.com/DayCrazy/publishImageAndVideoAnsRecord) - 发布视频、语言、照片模块集合，其中包括带placeHolder的TextView、录制小视频、录制音频、选择照片或拍照.
+* [XBSettingController](https://github.com/changjianfeishui/XBSettingController) - 快速搭建类个人中心及应用设置界面.
+* [QMUI_iOS](https://github.com/QMUI/QMUI_iOS) - QMUI iOS——致力于提高项目 UI 开发效率的解决方案.
+* [UniversalProject](https://github.com/XuYang8026/UniversalProject) - 基于MVC架构的iOS轻量级框架，封装了基类、基于猿题库YTKNetwork的网络服务、工具库，NavigationController转场动画/瀑布流/粒子动画/小demo，已适配iOS11 & iPhone X.
+* [MACProject](https://github.com/azheng51714/MACProject) - 这是一个用 Objective-C 写的 iOS 轻量级框架，旨在快速构建 iOS App.
+* [iOSProject](https://github.com/NJHu/iOSProject) - 一些oc项目集合.
+
+#### React
+
+* [react-native](https://github.com/facebook/react-native)  - A framework for building native apps with React.
+* [weex](https://github.com/alibaba/weex) - A framework for building Mobile cross-platform UI.
+* [LoginWithReactiveCocoa](https://github.com/CrazySurfBoy/LoginWithReactiveCocoa) - ReactiveCocoa - 登录交互效果的实现。
+* [BeeFramework](https://github.com/gavinkwoe/BeeFramework) -  与ReactiveCocoa类似，[BeeFramework用户指南 v1.0](http://www.lanrenios.com/tutorials/all/2012/1220/641.html)。
+* [Objective-Chain](https://github.com/Tricertops/Objective-Chain) - Objective-Chain是一个面向对象的响应式框架，作者表示该框架吸收了 ReactiveCocoa 的思想，并且想做得更面向对象一些。
+* [MVVMFramework](https://github.com/lovemo/MVVMFramework) - (OC版)总结整理下一个快速开发框架，分离控制器中创建tableView和collectionView的代码，已加入cell自适应高度，降低代码耦合，提高开发效率。
+* [react-native-config](https://github.com/luggit/react-native-config) - Bring some 12 factor love to your mobile apps.
+* [react-native-syan-image-picker](https://github.com/syanbo/react-native-syan-image-picker) - React-Native 多图片选择 支持裁剪 压缩.
+* [ReactNative的理解与思考,三端同一套代码的实践](http://www.jianshu.com/p/1144469bf81f?hmsr=toutiao.io&utm_medium=toutiao.io&utm_source=toutiao.io).
+* [RNStudyNotes](https://github.com/crazycodeboy/RNStudyNotes) - React Native 研究与实践.
+
+#### framework
+
+* [ReSwift](https://github.com/ReSwift/ReSwift) - ReSwift 是一个轻量级的框架，能够帮助你很轻松的去构建一个 Redux 架构的app.
+* [Small](https://github.com/wequick/Small) - A small framework to split app into small parts.
+* [Lotusoot](https://github.com/Vegetarians/Lotusoot) - 灵活的 Swift 组件通信和路由工具.
+* [Aspects](https://github.com/steipete/Aspects) - 个简洁高效的用于使iOS支持AOP面向切面编程的库.它可以帮助你在不改变一个类或类实例的代码的前提下,有效更改类的行为.
+* [Form](https://github.com/hyperoslo/Form) - JSON 驱动的 Form表单系统，复杂的表单填写类 App 极其需要（比如淘宝呢！）.
+
+#### 混合开发
+
+* [rexxar-ios](https://github.com/douban/rexxar-ios) - 豆瓣推的混合开发库 Mobile Hybrid Framework Rexxar iOS Container.
 
 #### 前端
 
