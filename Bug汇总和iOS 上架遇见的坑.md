@@ -100,3 +100,21 @@ dyld: Library not loaded: @rpath/libswiftCore.dylib
 1.如果执行第二步报出文件路径已存在，删除该路径文件，使用命令sodu rm -r -f 文件名（删除文件）。然后再重新执行第二条命令。
 2.如果执行第三步之后一段时间没有任何输入，不要犹豫，之间Control+c强行终止然后再执行第三步就行了
 
+
+####828 duplicate symbols for architecture arm64
+因为我写的枚举映射
+<p align="left">
+  <img width="400" src="Res/WX20190911-104529@2x.png" hspace="30px" />
+</p>
+解决方案:
+声明方式改为 static NSString * const _Nonnull KJShareViewSharePathTypeStringMap[] 
+
+
+####Cannot form weak reference to instance (0x1089cf000) of class HTML5ViewController. It is possible that this object was over-released, or is in the process of deallocation.
+原因：A控制器设置了委托，然后跳转到B控制器，当A控制器 push到B控制器，然后B控制器又pop到A控制器，出现对象被过度释放，或正在被释放的过程中  
+解决方案：在B将要退出时把delegate = nil
+在dealloc中清空代理，手动释放delegate
+
+####设置渐变色之后Label上面文字不显示
+原因：设置渐变后，发现Label上的字体不显示，想着设置方法在layer加载后，测试发现还是不行，把背景颜色的透明度改为0，发现背景色覆盖住字体  
+解决方案：[label.layer insertSublayer:gradientLayer0 atIndex:0];
