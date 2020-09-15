@@ -8,10 +8,12 @@ Failed to find a suitable device for the type IBSimDeviceTypeiPad2x (com.apple.d
 解决网址：https://leancloud.cn/docs/ios_push_cert.html
 
 ####<font color=#FF0000 size=4>* 运行就崩，控制台打印如下信息</font>  
+```
 dyld: Library not loaded: @rpath/libswiftCore.dylib
-  Referenced from: /var/containers/Bundle/Application/A81A055C-4D20-4F40-9EB1-76B2A93197CA/Winpower.app/Winpower
+Referenced from: /var/containers/Bundle/Application/A81A055C-4D20-4F40-9EB1-76B2A93197CA/Winpower.app/Winpower
   Reason: no suitable image found.  Did find:
 	/private/var/containers/Bundle/Application/A81A055C-4D20-4F40-9EB1-76B2A93197CA/Winpower.app/Frameworks/libswiftCore.dylib: code signature invalid for '/private/var/containers/Bundle/Application/A81A055C-4D20-4F40-9EB1-76B2A93197CA/Winpower.app/Frameworks/libswiftCore.dylib'  
+```
 原因：名字重复使用过  
 解决方案：  
 1、退出 Xcode  
@@ -20,7 +22,7 @@ dyld: Library not loaded: @rpath/libswiftCore.dylib
 4、删除 com.apple.dt.Xcode 文件 (路径:~/Library/Caches/com.apple.dt.Xcode)
 
 ####<font color=#FF0000 size=4>* Xib报错</font>
-![WX20190731-141951@2x.png](https://upload-images.jianshu.io/upload_images/1933747-240f906e52f6931a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![WX20190731-141951@2x.png](https://upload-images.jianshu.io/upload_images/1933747-240f906e52f6931a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
 解决方案：重启电脑，然后重启Xcode
 
 ####<font color=#FF0000 size=4>* 828 duplicate symbols for architecture arm64</font>  
@@ -61,24 +63,14 @@ App背景和文字相对应的做出了反转
 <string>Light</string>
 ```
 
-![WX20191010-155217@2x.png](https://upload-images.jianshu.io/upload_images/1933747-a6ee14d4473e7420.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![WX20191010-155217@2x.png](https://upload-images.jianshu.io/upload_images/1933747-a6ee14d4473e7420.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
 
 ####<font color=#FF0000 size=4>* iOS13以后 presentViewController 过去的控制器可以滑动和顶部少一截问题</font>  
-解决方案：写一个UIViewController的类别
+解决方案：写一个UIViewController的类别    
 
 ```
-//
-//  UIViewController+KJFullScreen.m
-//  Winpower
-//
-//  Created by 杨科军 on 2019/10/10.
-//  Copyright © 2019 cq. All rights reserved.
-//
-
 #import "UIViewController+KJFullScreen.h"
-
 @implementation UIViewController (KJFullScreen)
-
 + (void)load{
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
@@ -94,30 +86,19 @@ App背景和文字相对应的做出了反转
         }
     });
 }
-
 - (void)kj_presentViewController:(UIViewController *)vc animated:(BOOL)animated completion:(void (^)(void))completion{
     if (@available(iOS 13.0, *)) {
         vc.modalPresentationStyle = UIModalPresentationFullScreen;/// 充满全屏
     }
     [self kj_presentViewController:vc animated:animated completion:completion];
 }
-
 @end
 ```
 ####<font color=#FF0000 size=4>* UISegmentedControl解决修改不了 backgroundColor 和 tintColor</font>  
 解决方案:解决修改不了 backgroundColor 和 tintColor
 
 ```
-//
-//  UISegmentedControl+KJCustom.m
-//  Winpower
-//
-//  Created by 杨科军 on 2019/10/12.
-//  Copyright © 2019 cq. All rights reserved.
-//
-
 #import "UISegmentedControl+KJCustom.h"
-
 @implementation UISegmentedControl (KJCustom)
 - (void)kj_ensureBackgroundAndTintColor {
     if (@available(iOS 13, *)) {
@@ -132,7 +113,6 @@ App背景和文字相对应的做出了反转
         self.layer.borderColor = [tintColor CGColor];
     }
 }
-
 - (UIImage *)imageWithColor:(UIColor*)color {
     CGRect rect = CGRectMake(0.0f, 0.0f, 1.0f, 1.0f);
     UIGraphicsBeginImageContext(rect.size);
@@ -143,7 +123,11 @@ App背景和文字相对应的做出了反转
     UIGraphicsEndImageContext();
     return theImage;
 }
-
 @end
-
 ```
+####<font color=#FF0000 size=4>* thread 1:exc _bad _access(code=1,address=0x70000008)</font>  
+![](https://upload-images.jianshu.io/upload_images/1933747-ef9876f733533155.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
+
+错误原因：定义字符串属性时使用`assign`  （访问了已经释放的对象导致）  
+解决方案：开启NSZombieEnabled（僵尸模式）
+![image.png](https://upload-images.jianshu.io/upload_images/1933747-554eef579f1ae241.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/800)
